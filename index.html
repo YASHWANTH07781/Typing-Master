@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Master</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="neon">
+  <div class="container">
+    <h1>Typing Master</h1>
+
+    <div class="controls">
+      <select id="themeSelector">
+        <option value="neon" selected>Neon</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="solarized">Solarized</option>
+        <option value="ocean">Ocean</option>
+        <option value="forest">Forest</option>
+        <option value="dracula">Dracula</option>
+        <option value="pastel">Pastel</option>
+        <option value="matrix">Matrix</option>
+        <option value="midnight">Midnight</option>
+      </select>
+
+      <select id="difficultySelector">
+        <option value="easy" selected>Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button id="pauseBtn">Pause</button>
+      <button id="stopBtn">Stop</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div id="stats">
+      <span id="accuracy">Accuracy: 100%</span>
+      <span id="cps">CPS: 0</span>
+      <span id="timer">Time: 0.000 s</span>
+    </div>
+
+    <div id="displayText" class="display-text"></div>
+
+    <!-- Full Keyboard -->
+    <div class="keyboard">
+      <div class="row">
+        <button class="key special" data-key="`">`</button>
+        <button class="key" data-key="1">1</button>
+        <button class="key" data-key="2">2</button>
+        <button class="key" data-key="3">3</button>
+        <button class="key" data-key="4">4</button>
+        <button class="key" data-key="5">5</button>
+        <button class="key" data-key="6">6</button>
+        <button class="key" data-key="7">7</button>
+        <button class="key" data-key="8">8</button>
+        <button class="key" data-key="9">9</button>
+        <button class="key" data-key="0">0</button>
+        <button class="key" data-key="-">-</button>
+        <button class="key" data-key="=">=</button>
+        <button class="key special" data-key="Backspace" disabled>Backspace</button>
+      </div>
+
+      <div class="row">
+        <button class="key special" data-key="Tab" disabled>Tab</button>
+        <button class="key" data-key="q">Q</button>
+        <button class="key" data-key="w">W</button>
+        <button class="key" data-key="e">E</button>
+        <button class="key" data-key="r">R</button>
+        <button class="key" data-key="t">T</button>
+        <button class="key" data-key="y">Y</button>
+        <button class="key" data-key="u">U</button>
+        <button class="key" data-key="i">I</button>
+        <button class="key" data-key="o">O</button>
+        <button class="key" data-key="p">P</button>
+        <button class="key" data-key="[">[</button>
+        <button class="key" data-key="]">]</button>
+        <button class="key" data-key="\\">\\</button>
+      </div>
+
+      <div class="row">
+        <button class="key special" data-key="CapsLock" disabled>CapsLock</button>
+        <button class="key" data-key="a">A</button>
+        <button class="key" data-key="s">S</button>
+        <button class="key" data-key="d">D</button>
+        <button class="key" data-key="f">F</button>
+        <button class="key" data-key="g">G</button>
+        <button class="key" data-key="h">H</button>
+        <button class="key" data-key="j">J</button>
+        <button class="key" data-key="k">K</button>
+        <button class="key" data-key="l">L</button>
+        <button class="key" data-key=";">;</button>
+        <button class="key" data-key="'">'</button>
+        <button class="key special" data-key="Enter" disabled>Enter</button>
+      </div>
+
+      <div class="row">
+        <button class="key special" data-key="Shift" disabled>Shift</button>
+        <button class="key" data-key="z">Z</button>
+        <button class="key" data-key="x">X</button>
+        <button class="key" data-key="c">C</button>
+        <button class="key" data-key="v">V</button>
+        <button class="key" data-key="b">B</button>
+        <button class="key" data-key="n">N</button>
+        <button class="key" data-key="m">M</button>
+        <button class="key" data-key=",">,</button>
+        <button class="key" data-key=".">.</button>
+        <button class="key" data-key="/">/</button>
+        <button class="key special" data-key="ShiftRight" disabled>Shift</button>
+      </div>
+
+      <div class="row">
+        <button class="key special space" data-key=" ">␣</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
