@@ -19,42 +19,21 @@ let typingStarted = false;
 let timerInterval = null;
 
 const easyTexts = [
-  "hello world",
-  "type faster",
-  "keep going",
-  "coding rocks",
-  "stay sharp",
-  "practice makes perfect",
-  "typing is fun and helpful",
-  "stay consistent and improve",
-  "learning every single day",
-  "the quick brown fox jumps over the lazy dog"
+  "Typing is an important skill that helps us in school and work. It makes writing faster and more fun. Practice every day to get better and more confident with your keyboard.",
+  "When you learn to type, your hands get used to the keys. Soon, you won’t have to look down at your keyboard. Keep calm and enjoy improving your typing speed.",
+  "Typing helps you share your thoughts quickly and clearly. It’s okay to make mistakes, because each one helps you learn. With patience and focus, you can type like a pro in no time."
 ];
 
 const mediumTexts = [
-  "Hello World",
-  "Type Faster",
-  "Keep Going",
-  "Coding Rocks",
-  "Stay Sharp",
-  "Practice makes perfect",
-  "Focus on accuracy and speed",
-  "JavaScript powers the web",
-  "Consistency is the key to success",
-  "Never stop learning new things"
+  "Typing efficiently is about balancing speed and accuracy. It’s better to type slowly and correctly at first, then gradually increase your speed. Consistent practice every day builds muscle memory. Proper finger placement helps reduce errors and hand fatigue. With time, typing will start to feel natural and effortless.",
+  "Many people underestimate the value of typing skills in modern life. Whether it’s for writing assignments, chatting online, or coding, typing plays a crucial role. The faster you type, the more productive you can be. Regular exercises, such as retyping articles, can help improve both precision and speed. Remember, even experts once started as beginners.",
+  "Developing typing skills is like learning to play a musical instrument. It takes rhythm, consistency, and awareness of your movements. Focusing on form and posture helps prevent strain and boosts efficiency. Typing different types of content—stories, essays, or code—keeps your learning diverse. Over time, you’ll notice how natural typing feels in daily activities."
 ];
 
 const hardTexts = [
-  "Hello@World#123!",
-  "Typing_is$fun!",
-  "Are_you_ready?",
-  "Fast&Accurate%",
-  "Practice&Perform",
-  "Complexity: O(n^2) vs O(n log n)",
-  "ReactJS, VueJS, and Angular are popular",
-  "Use Ctrl+Shift+Esc to open Task Manager",
-  "Optimize algorithms for better performance",
-  "Debugging is an essential skill for developers"
+  "Professional typists understand that typing is both an art and a science. They train their fingers to move instinctively, minimizing hesitation between keystrokes. Beyond mere speed, they focus on precision, rhythm, and endurance. Typing complex material such as code, reports, or technical writing challenges their adaptability. A true master typist maintains accuracy under pressure, using mental focus to stay composed. They view each error as feedback rather than failure, continually refining their technique. Regular breaks and ergonomic posture are vital to long-term performance. Ultimately, mastery in typing reflects discipline, patience, and a continuous drive to improve.",
+  "As typing evolves into a digital-era essential, professionals seek to optimize not only speed but also efficiency of motion. They learn advanced techniques like touch typing without glancing at the keys. Strategic hand placement reduces movement distance and prevents repetitive stress. High-level typists use peripheral vision to anticipate upcoming words, maintaining fluid rhythm. The challenge increases when switching between languages, symbols, and programming syntax. In such cases, muscle memory alone isn’t enough—mental adaptability becomes key. A typist’s focus resembles a musician’s flow, tuned to cadence and balance. Precision and endurance, cultivated over time, transform typing into a true craft.",
+  "Typing at an expert level involves merging technical control with mental composure. The task may seem mechanical, but the underlying process is highly cognitive. Each keystroke reflects an interaction between thought, coordination, and anticipation. Advanced users often train by shadowing difficult passages to boost resilience. Maintaining steady breathing helps reduce tension during long sessions. Overcoming fatigue requires mindfulness and ergonomic awareness. The greatest typists achieve near-symbiotic unity between mind and machine. What begins as practice eventually evolves into instinctive, rhythmic mastery of language and motion."
 ];
 
 function renderTextSpans(text) {
