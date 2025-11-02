@@ -9,7 +9,7 @@ It provides multiple difficulty levels, real-time stats, and theme options for a
 
 Here’s a glimpse of the Typing Master interface:
 
-![Typing Master Screenshot](./images/preview.png)
+![Typing Master Screenshot](./Images/preview.png)
 
 ---
 
